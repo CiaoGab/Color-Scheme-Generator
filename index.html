@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 class="title">Color Scheme Generator</h1>
+    <div class="container">
+      <header>
+        <div class="picker-elements">
+          <input type="color" id="color-picker" />
+          <select name="scheme-picker" id="scheme">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome-dark</option>
+            <option value="monochrome-light">Monochrome-light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic-complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad ">Quad</option>
+          </select>
+          <button id="get-scheme-btn">Get color Scheme</button>
+        </div>
+      </header>
+      <hr>
+      <main class="color-display">
+        <div class="color-column" id="color-column1"></div>
+        <div class="color-column" id="color-column2"></div>
+        <div class="color-column" id="color-column3"></div>
+        <div class="color-column" id="color-column4"></div>
+        <div class="color-column" id="color-column5"></div>
+        <div class="color-column" id="color-column6"></div>
+      </main>
+      <footer class="color-codes">
+        <p class="color-code" id="color-code1"></p>
+        <p class="color-code" id="color-code2"></p>
+        <p class="color-code" id="color-code3"></p>
+        <p class="color-code" id="color-code4"></p>
+        <p class="color-code" id="color-code5"></p>
+        <p class="color-code" id="color-code6"></p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
